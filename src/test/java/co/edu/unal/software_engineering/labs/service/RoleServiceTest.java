@@ -38,6 +38,9 @@ public class RoleServiceTest{
     public RoleServiceTest( ){ }
 
 
+    
+    /*test modificado para que de un error
+    */
     @Test
     public void findByIdTest( ){
         Role studentt = roleService.findById( Role.getStudent( ).getId( ) );
