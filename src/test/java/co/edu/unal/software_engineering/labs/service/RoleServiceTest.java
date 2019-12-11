@@ -37,11 +37,6 @@ public class RoleServiceTest{
 
     public RoleServiceTest( ){ }
 
-    
-    /*test modificado para que de un error
-    */
-
-    //esto es un nuevo comentario
 
     @Test
     public void findByIdTest( ){
