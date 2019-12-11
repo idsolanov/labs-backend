@@ -37,7 +37,9 @@ public class RoleServiceTest{
 
     public RoleServiceTest( ){ }
 
-    //esto es un nuevo comentario
+    /*
+    un nuevo comentario
+    */
     @Test
     public void findByIdTest( ){
         Role studentt = roleService.findById( Role.getStudent( ).getId( ) );
