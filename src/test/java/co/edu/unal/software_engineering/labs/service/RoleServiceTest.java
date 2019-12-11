@@ -40,13 +40,13 @@ public class RoleServiceTest{
 
     @Test
     public void findByIdTest( ){
-        Role student = roleService.findById( Role.getStudent( ).getId( ) );
-        Role teacher = roleService.findById( Role.getTeacher( ).getId( ) );
-        assertEquals( student, Role.getStudent( ) );
-        assertEquals( teacher, Role.getTeacher( ) );
+        Role studentt = roleService.findById( Role.getStudent( ).getId( ) );
+        Role teacherr = roleService.findById( Role.getTeacher( ).getId( ) );
+        assertEquals( studentt, Role.getStudent( ) );
+        assertEquals( teacherr, Role.getTeacher( ) );
 
-        assertNotEquals( student, Role.getTeacher( ) );
-        assertNotEquals( teacher, Role.getStudent( ) );
+        assertNotEquals( studentt, Role.getTeacher( ) );
+        assertNotEquals( teacherr, Role.getStudent( ) );
     }
 
 }
