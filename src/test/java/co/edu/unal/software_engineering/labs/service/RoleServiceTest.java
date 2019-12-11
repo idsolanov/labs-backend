@@ -37,18 +37,16 @@ public class RoleServiceTest{
 
     public RoleServiceTest( ){ }
 
-    /*
-    un nuevo comentario
-    */
+
     @Test
     public void findByIdTest( ){
         Role studentt = roleService.findById( Role.getStudent( ).getId( ) );
         Role teacherr = roleService.findById( Role.getTeacher( ).getId( ) );
-        assertEquals( studentt, Role.getStudent( ) );
-        assertEquals( teacherr, Role.getTeacher( ) );
+        assertEquals( studentt, Role.getTeacher( ) );
+        assertEquals( teacherr, Role.getStudent( ) );
 
-        assertNotEquals( studentt, Role.getTeacher( ) );
-        assertNotEquals( teacherr, Role.getStudent( ) );
+        assertNotEquals( studentt, Role.getStudent( ) );
+        assertNotEquals( teacherr, Role.getTeacher( ) );
     }
 
 }
